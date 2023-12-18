@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/start_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff4475e2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginStart="8.0dip"
+            android:background="@mipmap/back_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Setting"
+            android:textColor="#ffffffff"
+            android:textSize="25.0dip"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:background="#b0ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="80.0dip"
+                    android:layout_height="1.0dip" />
+
+                <Space
+                    android:layout_width="40.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:text="@string/base_setting"
+                    android:textColor="#40000000"
+                    android:textSize="14.0dip" />
+
+                <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/reversal" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom"
+                    android:text="@string/Image_flip"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Button
+                    android:id="@+id/btn_rev"
+                    android:layout_width="40.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@mipmap/on" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="50.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/watermark" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom"
+                    android:text="@string/Time_watermark"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Button
+                    android:id="@+id/btn_osd"
+                    android:layout_width="40.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@mipmap/off" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/loop_recording" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom"
+                    android:text="@string/Loop_recording"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Button
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:visibility="invisible" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_1min"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:background="@mipmap/selected_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#40000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/btn_1min"
+                    app:layout_constraintRight_toLeftOf="@id/btn_3min"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_3min"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:background="@mipmap/no_selected_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#40000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/btn_3min"
+                    app:layout_constraintRight_toLeftOf="@id/btn_5min"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_5min"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:background="@mipmap/no_selected_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/min_1"
+                    android:textSize="11.0dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/min_3"
+                    android:textSize="11.0dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/min_5"
+                    android:textSize="11.0dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="80.0dip"
+                    android:layout_height="1.0dip" />
+
+                <Space
+                    android:layout_width="40.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:text="@string/other_setting"
+                    android:textColor="#40000000"
+                    android:textSize="14.0dip" />
+
+                <Space
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/format" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:id="@+id/format_v"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/Format_SD"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Button
+                    android:id="@+id/format_b"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@mipmap/next" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/reset" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:id="@+id/rest_v"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/Rest"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Button
+                    android:id="@+id/rest_b"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@mipmap/next" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/number_icon" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/Fireware_Ver"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/Ver_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:text="1.000"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50.0dip"
+                    android:layout_height="1.0dip" />
+
+                <ImageView
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@mipmap/number_icon" />
+
+                <Space
+                    android:layout_width="30.0dip"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/APP_Ver"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/APP_Ver_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:text="1.000"
+                    android:textColor="#a0000000"
+                    android:textSize="15.0dip" />
+
+                <Space
+                    android:layout_width="20.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="120.0dip"
+                    android:layout_height="1.0dip" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#40000000" />
+
+                <Space
+                    android:layout_width="10.0dip"
+                    android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AlertView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:background="@mipmap/ferret_white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.66"
+            app:layout_constraintWidth_percent="0.55">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:background="@mipmap/ferret_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:background="#00000000"
+                android:text="@string/Cancel"
+                android:textColor="#ff0090ff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintWidth_percent="0.49" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:background="#00000000"
+                android:text="@string/OK"
+                android:textColor="#ff0090ff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <Button
+                android:id="@+id/btn_ok_a"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:background="#ffffffff"
+                android:text="@string/OK"
+                android:textColor="#ff0090ff"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.242"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <TextView
+                android:id="@+id/sLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Warring"
+                android:textColor="#ff000000"
+                android:textSize="20.0dip"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/sLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/All_Data_will_be_deleted"
+                android:textColor="#ff000000"
+                android:textSize="16.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="APP_Ver">APP版本</string>
+  <string name="All_Data_will_be_deleted">SD卡上的全部数据将被删除!</string>
+  <string name="Cancel">取消</string>
+  <string name="Delete">删除</string>
+  <string name="Do_you_sure_delete">确定要删除选定的文件?</string>
+  <string name="Edit">编辑</string>
+  <string name="Fireware_Ver">固件版本</string>
+  <string name="Format_SD">格式化SD卡</string>
+  <string name="GALLERY">相册</string>
+  <string name="Help">帮助</string>
+  <string name="Image_flip">图像翻转</string>
+  <string name="Loop_recording">循环录制</string>
+  <string name="No_Device_1">没有找到Sports Camera</string>
+  <string name="No_Device_2">请先连接到Sports Camera</string>
+  <string name="OK">确认</string>
+  <string name="PHOTOS">图片</string>
+  <string name="Please_reset_device">请重启 Sports Camera</string>
+  <string name="Rest">恢复出厂设置</string>
+  <string name="SelectALL">全选</string>
+  <string name="Setting">设置</string>
+  <string name="Start">开始</string>
+  <string name="The_necessary_permission_denied">应用需要读写本机内容，请授予读写权限.</string>
+  <string name="Time_watermark">时间水印</string>
+  <string name="VIDEOS">视频</string>
+  <string name="Warring">警告</string>
+  <string name="agreement">用户协议</string>
+  <string name="base_setting">基本设定</string>
+  <string name="click_to_restart">点击重试</string>
+  <string name="confirm">确定</string>
+  <string name="deleting">正在删除，请等待...</string>
+  <string name="downloading">正在下载</string>
+  <string name="load_url_error">"加载失败 
+ 请检查网络连接"</string>
+  <string name="logo_txt1">丰富大众生活</string>
+  <string name="logo_txt2">留住精彩瞬间</string>
+  <string name="min_1">2 分钟</string>
+  <string name="min_3">3 分钟</string>
+  <string name="min_5">5 分钟</string>
+  <string name="no_url">播放地址无效</string>
+  <string name="other_setting">其他设置</string>
+  <string name="privacy">隐私政策</string>
+  <string name="privacy_agree">同意</string>
+  <string name="privacy_disagree">不同意并退出</string>
+  <string name="privacy_introduce_content">"感谢你选择使用 Sports Camera, 请在使用前阅读并同意《隐私政策》，了解个人信息的使用情况与自主选择的权利。
+我们将严格按照《隐私政策》为您提供服务。"</string>
+  <string name="privacy_introduce_title">隐私保护政策指南</string>
+  <string name="privacy_policy">隐私政策</string>
+  <string name="reload">重新加载</string>
+  <string name="replay">重播</string>
+  <string name="system_message">权限被拒绝</string>
+  <string name="system_message_content">当前操作需要申请读写SD卡权限</string>
+  <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+  <string name="tips_not_wifi_cancel">停止播放</string>
+  <string name="tips_not_wifi_confirm">继续播放</string>
+  <string name="video_loading_failed">视频加载失败</string>
+  <string name="warning">警告</string>
+</resources>

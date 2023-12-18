@@ -1,0 +1,57 @@
+com/joyhonest/wifination/ObjectDetector.java
+ com.joyhonest.wifination.ObjectDetector
+ com.joyhonest.wifination.ObjectDetector$1
+ com.joyhonest.wifination.ObjectDetector$SingleTonHoulder
+com/joyhonest/wifination/UpdData.java
+ com.joyhonest.wifination.UpdData
+com/joyhonest/wifination/Logger.java
+ com.joyhonest.wifination.Logger
+com/joyhonest/wifination/MyThumb.java
+ com.joyhonest.wifination.MyThumb
+com/joyhonest/wifination/DeviceFilter.java
+ com.joyhonest.wifination.DeviceFilter
+com/joyhonest/wifination/jh_dowload_callback.java
+ com.joyhonest.wifination.jh_dowload_callback
+com/joyhonest/wifination/JH_ObjectDetectionAPIModel.java
+ com.joyhonest.wifination.JH_ObjectDetectionAPIModel
+ com.joyhonest.wifination.JH_ObjectDetectionAPIModel$1
+com/joyhonest/wifination/MyMediaMuxer.java
+ com.joyhonest.wifination.MyMediaMuxer
+com/joyhonest/wifination/PictureFromVideo_Interface.java
+ com.joyhonest.wifination.PictureFromVideo_Interface
+com/joyhonest/wifination/PlayerInterface.java
+ com.joyhonest.wifination.PlayerInterface
+com/joyhonest/wifination/BuildConfig.java
+ com.joyhonest.wifination.BuildConfig
+com/joyhonest/wifination/ImageUtils.java
+ com.joyhonest.wifination.ImageUtils
+com/joyhonest/wifination/Classifier.java
+ com.joyhonest.wifination.Classifier
+ com.joyhonest.wifination.Classifier$Recognition
+com/joyhonest/wifination/AudioCodec.java
+ com.joyhonest.wifination.AudioCodec
+com/joyhonest/wifination/JH_GLSurfaceView.java
+ com.joyhonest.wifination.JH_GLSurfaceView
+com/joyhonest/wifination/JH_Tools.java
+ com.joyhonest.wifination.JH_Tools
+ com.joyhonest.wifination.JH_Tools$MyCmdData
+com/joyhonest/wifination/fly_cmd.java
+ com.joyhonest.wifination.fly_cmd
+com/joyhonest/wifination/GP4225_Device.java
+ com.joyhonest.wifination.GP4225_Device
+ com.joyhonest.wifination.GP4225_Device$G_SensorData
+ com.joyhonest.wifination.GP4225_Device$GetFiles
+ com.joyhonest.wifination.GP4225_Device$GsensorData
+ com.joyhonest.wifination.GP4225_Device$MyFile
+com/joyhonest/wifination/MyUsbCamera.java
+ com.joyhonest.wifination.MyUsbCamera
+ com.joyhonest.wifination.MyUsbCamera$1
+com/joyhonest/wifination/wifination.java
+ com.joyhonest.wifination.wifination
+ com.joyhonest.wifination.wifination$1
+com/joyhonest/wifination/AudioEncoder.java
+ com.joyhonest.wifination.AudioEncoder
+ com.joyhonest.wifination.AudioEncoder$1
+ com.joyhonest.wifination.AudioEncoder$Worker
+com/joyhonest/wifination/VideoMediaCoder.java
+ com.joyhonest.wifination.VideoMediaCoder

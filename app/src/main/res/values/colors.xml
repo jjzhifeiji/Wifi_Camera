@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ffd81b60</color>
+    <color name="colorPrimary">#ff008577</color>
+    <color name="colorPrimaryDark">#ff00574b</color>
+    <color name="color_background_dialog">#ffffffff</color>
+    <color name="color_background_item">#ffbfbfbf</color>
+    <color name="color_divider_line">#30000000</color>
+    <color name="divider_color">#ffdfdfdf</color>
+    <color name="green">#ff339966</color>
+    <color name="ic_launcher_background">#ff0783a6</color>
 </resources>

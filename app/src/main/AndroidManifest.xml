@@ -1,26 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.joyhonest.jh_camera">
+    package="com.joyhonest.sports_camera">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:allowBackup="true"
+        android:name="com.joyhonest.sports_camera.MyApp"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".PlayActivity"
-            android:screenOrientation="landscape"/>
-
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".StartActivity"
-            android:screenOrientation="landscape">
+            android:name="com.joyhonest.sports_camera.JoyDispVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.OnlinePlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.boot_Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name="com.joyhonest.sports_camera.DispVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.DispPhotoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.BrowGridActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.BrowSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.SettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.HelpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.PlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.joyhonest.sports_camera.PrivacyPolicyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
 
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.joyhonest.sports_camera.androidx-startup"
+            android:exported="false" />
+    </application>
 </manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="5.0dip">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="20.0sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/detail_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip"
+        android:background="@drawable/bg_dialog"
+        android:clipToPadding="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.0dip"
+            android:background="@drawable/bg_dialog">
+
+            <TextView
+                android:id="@+id/extra_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_dialog"
+                android:textColor="@color/colorAccent"
+                android:textSize="14.0sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/positive_label"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/selector_btn_agree"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@+id/negative_label"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_btn_disagree"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="16.0sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

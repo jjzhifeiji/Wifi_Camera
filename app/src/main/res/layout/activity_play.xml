@@ -1,52 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.joyhonest.jh_camera.PlayActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000">
+
     <ImageView
-        android:id="@+id/DispImageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/DisplayImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/left_view"
+        android:layout_width="60.0dip"
+        android:layout_height="0.0dip"
+        android:background="#50000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <Button
-        android:id="@+id/btn_Play"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:text="Play"
+        app:layout_constraintHeight_percent="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btn_Seek"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:text="Seek"
-        app:layout_constraintStart_toEndOf="@+id/btn_Play"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip" />
 
-    <Button
-        android:id="@+id/btn_Pause"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:text="Pause"
-        app:layout_constraintStart_toEndOf="@+id/btn_Seek"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/btn_Stop"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:text="Pause"
-        app:layout_constraintStart_toEndOf="@+id/btn_Pause"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/back_icon_play" />
 
-</android.support.constraint.ConstraintLayout>
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.5" />
+
+        <Button
+            android:id="@+id/btn_fillxy"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/fitcenter" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button_right0"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/led_status_off" />
+
+        <Space
+            android:id="@+id/space_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/photo_icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/video_icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/gallery_icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/but_phone"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/phone_icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_view"
+        android:layout_width="60.0dip"
+        android:layout_height="0.0dip"
+        android:background="#50000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="40.0dip"
+            android:layout_height="15.0dip"
+            android:background="@mipmap/battery_4" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.5" />
+
+        <ImageView
+            android:id="@+id/wifi_signal"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/jhd_wifi4"
+            android:contentDescription="@string/app_name" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button_left0"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/ir_off" />
+
+        <Space
+            android:id="@+id/space_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/photo_device" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/video_device" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/gallery_device" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/but_sd_icon"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/sd_icon" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <com.joyhonest.sports_camera.StrokeTextView
+        android:id="@+id/RecTime_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="00:00"
+        android:textColor="#ffff0000"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:stroke_color="@android:color/white"
+        app:stroke_width="1.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

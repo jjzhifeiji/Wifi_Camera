@@ -1,4 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">JH_Camera</string>
-    <string name="app_namenoADJ">JH_Camera_noADJ</string>
+    <string name="APP_Ver">APP Version</string>
+    <string name="All_Data_will_be_deleted">All data on SD card will be deleted!!</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Delete">Delete</string>
+    <string name="Do_you_sure_delete">Do you sure delete the select files?</string>
+    <string name="Edit">Edit</string>
+    <string name="Fireware_Ver">Firmware Version</string>
+    <string name="Format_SD">Format SD Card</string>
+    <string name="GALLERY">GALLERY</string>
+    <string name="Help">Help</string>
+    <string name="Image_flip">Image flip</string>
+    <string name="Loop_recording">Loop recording</string>
+    <string name="No_Device_1">Sports Camera not found</string>
+    <string name="No_Device_2">Please connect Sports Camera first</string>
+    <string name="OK">OK</string>
+    <string name="PHOTOS">PHOTOS</string>
+    <string name="Please_reset_device">Please reset the Sports Camera</string>
+    <string name="Rest">Reset</string>
+    <string name="SelectALL">Select All</string>
+    <string name="Setting">Setting</string>
+    <string name="Start">Start</string>
+    <string name="The_necessary_permission_denied">The application needs to read and write external storage. Please open the read and write external storage permissions.</string>
+    <string name="Time_watermark">Time watermark</string>
+    <string name="VIDEOS">VIDEOS</string>
+    <string name="Warring">Warring</string>
+    <string name="agreement">User Agreement</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">Sports Camera</string>
+    <string name="base_setting">Base Setting</string>
+    <string name="click_to_restart">Click to try again</string>
+    <string name="confirm">OK</string>
+    <string name="deleting">Deleting files , please wait ...</string>
+    <string name="downloading">downloading</string>
+    <string name="ijkplayer_dummy">.</string>
+    <string name="load_url_error">"Loading failed
+ Please check network connection."</string>
+    <string name="logo_txt1">Ｍake happy life</string>
+    <string name="logo_txt2">Keep happy time</string>
+    <string name="min_1">2 Minutes</string>
+    <string name="min_3">3 Minutes</string>
+    <string name="min_5">5 Minutes</string>
+    <string name="no_url">No url</string>
+    <string name="other_setting">Other Setting</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="privacy_agree">Agree</string>
+    <string name="privacy_disagree">Disagree And Quit</string>
+    <string name="privacy_introduce_content">"Thank you for choosing to use Sports DV, please read and agree to the \"Privacy Policy\" before using, to understand the use of personal information and the right to choose independently.
+We will provide you with services in strict accordance with the \"Privacy Policy\"."</string>
+    <string name="privacy_introduce_title">Privacy Policy Introduction</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="reload">Reload</string>
+    <string name="replay">Replay</string>
+    <string name="system_message">Permissions denied</string>
+    <string name="system_message_content">The current operation need to apply for reading and writing SD card authority</string>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="video_loading_failed">Video loading failed</string>
+    <string name="warning">warning</string>
 </resources>
