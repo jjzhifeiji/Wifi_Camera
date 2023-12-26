@@ -12,7 +12,6 @@
 
     <application
         android:name="com.joyhonest.sports_camera.MyApp"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"

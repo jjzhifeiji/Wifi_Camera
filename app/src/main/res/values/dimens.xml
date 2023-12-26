@@ -2,4 +2,5 @@
 <resources>
     <dimen name="jz_start_button_w_h_fullscreen">62.0dip</dimen>
     <dimen name="jz_start_button_w_h_normal">45.0dip</dimen>
+    <dimen name="dimension_1">1</dimen>
 </resources>
