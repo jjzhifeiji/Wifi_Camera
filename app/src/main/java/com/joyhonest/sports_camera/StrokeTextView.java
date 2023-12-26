@@ -1,5 +1,6 @@
 package com.joyhonest.sports_camera;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -30,7 +31,8 @@ public class StrokeTextView extends androidx.appcompat.widget.AppCompatTextView 
     private void init(AttributeSet attributeSet) {
         TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, R.styleable.StrokeTextView);
         int color = obtainStyledAttributes.getColor(0, -1);
-        float dimension = obtainStyledAttributes.getDimension(R.dimen.dimension_1, 2.0f);
+        @SuppressLint("ResourceType")
+        float dimension = obtainStyledAttributes.getDimension(1, 2.0f);
         TextPaint paint = this.outlineTextView.getPaint();
         paint.setStrokeWidth(dimension);
         paint.setStyle(Paint.Style.STROKE);
